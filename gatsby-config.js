@@ -29,5 +29,17 @@ module.exports = {
         display: "swap", // Optional: Adds "display=swap" to the Google Fonts URL
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Erika & Jorge`,
+        short_name: `Boda`,
+        start_url: `/`,
+        background_color: `#F9F6EE`, // Background color of your favicon
+        theme_color: `#A7BFA5`,      // Theme color to complement your favicon
+        display: `standalone`,
+        icon: `src/images/favicon.webp`, // Path to your favicon file
+      },
+    },
   ],
 };
