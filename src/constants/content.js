@@ -91,7 +91,6 @@ export const content = {
 	whatsappText: "Confirmar asistencia",
 	whatsappUrl: "https://wa.me/50664328083?text=¡Hola!%20Gracias%20por%20confirmar%20tu%20asistencia%20a%20nuestra%20boda.%20Recuerda%20que%20tienes%20{{amount}}%20{{spaces}}%20{{availability}}.",
 	plusOne: "%20¿Cuántos%20vas%20a%20utilizar%3F",
-	spaces: "Espacios disponibles",
 	spacesOne: "lugar",
 	spacesTwo: "lugares",
 	availabilityOne: "disponible",
