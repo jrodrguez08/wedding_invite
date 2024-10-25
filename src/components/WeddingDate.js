@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Typography, Button } from "@mui/material";
+import PlaceOutlinedIcon from '@mui/icons-material/PlaceOutlined';
 import { format } from "date-fns";
 import { es } from "date-fns/locale";
 
@@ -38,6 +39,7 @@ export const WeddingDate = () => {
         </Typography>
         <Button
           variant="contained"
+          startIcon={<PlaceOutlinedIcon />}
           href={content.date.locationUrl}
           target="_blank"
           sx={{ color: colors.white }}

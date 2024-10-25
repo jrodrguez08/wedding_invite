@@ -25,6 +25,9 @@ export const Rsvp = () => {
     let whatsappUrl = content.rsvp.whatsappUrl.replace("{{amount}}", inviteeData?.spaces).replace("{{spaces}}", spacesText).replace("{{availability}}", availabilityText);
     whatsappUrl = isPlusOne ? `${whatsappUrl}${content.rsvp.plusOne}` : whatsappUrl;
 
+    const inviteesAmount = invitees?.reduce((acc, i) => acc + i?.spaces, 0);
+    console.log("inviteesAmount", inviteesAmount);
+
   return (
     <Box id="rsvp" sx={{ textAlign: "center", margin: "4rem 2rem" }}>
       <Typography variant="h3" gutterBottom fontFamily="Tino serif">
