@@ -31,7 +31,7 @@ export const Rsvp = () => {
         {content.rsvp.heading}
       </Typography>
       <Typography variant="h4" gutterBottom>
-        {content.rsvp.text.replace("{{invitee}}", inviteeData?.name)}
+        {content.rsvp.text.replace("{{invitee}}", inviteeData?.name || "Invitado")}
       </Typography>
       <Button
         variant="contained"
