@@ -19,7 +19,7 @@ import { colors } from "../constants/colors";
 
 export const CustomizedTimeline = () => {
   return (
-    <Box id="el-dia" sx={{ margin: "4rem" }}>
+    <Box id="el-dia" sx={{ margin: { xs: "1rem", sm: "2rem", md: "4rem" } }}>
       <Typography
         component="h3"
         variant="h3"
