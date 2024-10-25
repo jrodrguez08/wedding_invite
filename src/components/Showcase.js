@@ -11,7 +11,8 @@ export const Showcase = () => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        marginBottom: "4rem"
       }}
     >
       <Box
