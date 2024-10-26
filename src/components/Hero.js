@@ -4,13 +4,18 @@ import { Box, Typography } from "@mui/material";
 import { colors } from "../constants/colors";
 import { content } from "../constants/content";
 
-export const Hero = ({ bcImg, bcColor = "#F9F6EE" }) => {
+import top from "../images/top.png";
+
+export const Hero = () => {
   return (
     <Box
       id="inicio"
       sx={{
-        margin: "4rem 0",
-        padding: "0 2rem",
+        padding: "4rem 2rem",
+        backgroundImage: `url(${top})`,
+        backgroundSize: {xs: "contain", md: "cover"},
+        backgroundPosition: {xs: "100% -15%", md: "100% 130%"},
+        backgroundRepeat: "no-repeat"
       }}
     >
       <Typography
@@ -24,12 +29,7 @@ export const Hero = ({ bcImg, bcColor = "#F9F6EE" }) => {
       </Typography>
       <Box
         sx={{
-          margin: "2rem 1rem",
-          backgroundColor: bcColor,
-          backgroundImage: `url(${bcImg})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
+          margin: "2rem 1rem"
         }}
       >
         <Typography

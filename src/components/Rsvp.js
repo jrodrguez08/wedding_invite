@@ -12,6 +12,8 @@ import { invitees } from "../constants/invitees";
 import { content } from "../constants/content";
 import { colors } from "../constants/colors";
 
+import bottom from "../images/bottom.png";
+
 export const Rsvp = () => {
   const location = useLocation();
   const { invitee } = queryString.parse(location.search);
@@ -43,7 +45,17 @@ export const Rsvp = () => {
   console.log("inviteesAmount", inviteesAmount);
 
   return (
-    <Box id="rsvp" sx={{ textAlign: "center", margin: "4rem 2rem" }}>
+    <Box
+      id="rsvp"
+      sx={{
+        textAlign: "center",
+        padding: "4rem 2rem",
+        backgroundImage: `url(${bottom})`,
+        backgroundSize: {xs: "contain", md: "cover"},
+        backgroundPosition: {xs: "100% 125%", md: "100% 30%"},
+        backgroundRepeat: "no-repeat"
+      }}
+    >
       <Typography variant="h3" gutterBottom fontFamily="Tino serif">
         {content.rsvp.heading}
       </Typography>

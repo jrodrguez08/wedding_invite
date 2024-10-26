@@ -1,11 +1,16 @@
 import React from "react";
 import { Grid, Card, Box } from "@mui/material";
 
+import pic_1 from "../images/pic_1.jpg";
+import pic_2 from "../images/pic_2.jpg";
+import pic_3 from "../images/pic_3.jpg";
+import pic_4 from "../images/pic_4.jpg";
+
 const pictures = [
-  { id: 1, src: "https://via.placeholder.com/300", alt: "Pic 1" },
-  { id: 3, src: "https://via.placeholder.com/400", alt: "Pic 3" },
-  { id: 4, src: "https://via.placeholder.com/350", alt: "Pic 4" },
-  { id: 5, src: "https://via.placeholder.com/250", alt: "Pic 5" },
+  { id: 1, src: pic_1, alt: "Pic 1" },
+  { id: 3, src: pic_2, alt: "Pic 3" },
+  { id: 4, src: pic_3, alt: "Pic 4" },
+  { id: 5, src: pic_4, alt: "Pic 5" },
 ];
 
 export const Collage = () => {
