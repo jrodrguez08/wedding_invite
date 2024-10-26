@@ -11,7 +11,7 @@ export const Dresscode = () => {
   );
 
   return (
-    <Box id="dresscode" sx={{ padding: 2, marginBottom: "4rem" }}>
+    <Box id="dresscode" sx={{ padding: 2 }}>
       <Typography
         component="h3"
         variant="h3"
