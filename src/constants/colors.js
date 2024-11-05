@@ -1,23 +1,15 @@
 export const colors = {
-  creamyIvory: "#FFF8E1",
-  merino: "#F9F6EE",
-  powderBlue: "#B0C4DE",
-  dustyBlue: "#A3BFD9",
-  sageBlue: "#9FB7B8",
-  lavender: "#E6E6FA",
-  norway: "#A7BFA5",
-  mutedSage: "#9CAEA3",
-  lilac: "#D8BFD8",
-  warmTaupe: "#D2B1A3",
-  dustyRose: "#C4A69F",
-  softGold: "#E2C044",
-  tussok: "#B89242",
-  amethyst: "#9966CC",
-  slateGray: "#708090",
-  slateBlue: "#6A7F98",
-  forestGreen: "#4B6C5A",
-  navyBlue: "#2C3E50",
-  deepPlum: "#673147",
   black: "#000000",
+  charcoalGray: "#333333",  // Shade of gray for suits
+  slateGray: "#4A4A4A",     // Shade of gray for suits
+  biscay: "#182F57",
+  biscayLight: "#1B4661",
+  blueDianne: "#19454B",
+  greenPea: "#1B6156",
+  greenPeaLight: "#18573B",
+  norway: "#A7BFA5",
+  beige: "#D8C3A5",         // Beige for suits
+  deepBurgundy: "#800020",  // Burgundy for dress
+  merino: "#F9F6EE",
   white: "#FFFFFF"
 };

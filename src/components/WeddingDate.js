@@ -1,6 +1,6 @@
 import React from "react";
-import { Box, Typography, Button } from "@mui/material";
-import PlaceOutlinedIcon from '@mui/icons-material/PlaceOutlined';
+import { Box, Typography, Button, Paper } from "@mui/material";
+import PlaceOutlinedIcon from "@mui/icons-material/PlaceOutlined";
 import { format } from "date-fns";
 import { es } from "date-fns/locale";
 
@@ -24,29 +24,39 @@ export const WeddingDate = () => {
     formattedDateTime.charAt(0).toUpperCase() + formattedDateTime.slice(1);
 
   return (
-    <Box id="fecha-y-lugar" sx={{ margin: "4rem" }}>
-      <Box sx={{ marginBottom: "2rem" }}>
-        <Typography variant="h4" gutterBottom>
-          {capitalizedDateTime}
-        </Typography>
-        <Typography variant="h5" sx={{ color: colors.tundora }}>
-          {formattedTime}
-        </Typography>
-      </Box>
-      <Box>
-        <Typography variant="h4" gutterBottom>
-          {content.date.location}
-        </Typography>
-        <Button
-          variant="contained"
-          startIcon={<PlaceOutlinedIcon />}
-          href={content.date.locationUrl}
-          target="_blank"
-          sx={{ color: colors.white }}
-        >
-          {content.date.seeLocation}
-        </Button>
-      </Box>
+    <Box
+      id="fecha-y-lugar"
+      sx={{
+        margin: "4rem",
+        display: "flex",
+        alignItem: "center",
+        justifyContent: "center",
+      }}
+    >
+      <Paper sx={{ padding: "4rem" }}>
+        <Box sx={{ marginBottom: "2rem" }}>
+          <Typography variant="h4" gutterBottom>
+            {capitalizedDateTime}
+          </Typography>
+          <Typography variant="h5" sx={{ color: colors.tundora }}>
+            {formattedTime}
+          </Typography>
+        </Box>
+        <Box>
+          <Typography variant="h4" gutterBottom>
+            {content.date.location}
+          </Typography>
+          <Button
+            variant="contained"
+            startIcon={<PlaceOutlinedIcon />}
+            href={content.date.locationUrl}
+            target="_blank"
+            sx={{ color: colors.white }}
+          >
+            {content.date.seeLocation}
+          </Button>
+        </Box>
+      </Paper>
     </Box>
   );
 };

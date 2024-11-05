@@ -7,7 +7,7 @@ import { colors } from "../constants/colors";
 
 export const Dresscode = () => {
   const suggestedColors = Object.values(colors).filter(
-    (color) => color !== colors.white && color !== colors.black
+    (color) => color !== colors.white && color !== colors.black && color !== colors.merino
   );
 
   return (

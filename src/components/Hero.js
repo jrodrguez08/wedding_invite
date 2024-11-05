@@ -5,6 +5,7 @@ import { colors } from "../constants/colors";
 import { content } from "../constants/content";
 
 import top from "../images/top.png";
+import frame from "../images/wood.webp";
 
 export const Hero = () => {
   return (
@@ -36,7 +37,10 @@ export const Hero = () => {
           variant="h1"
           component="h1"
           sx={{
-            color: colors.tussok,
+            backgroundImage: `url(${frame})`,
+            backgroundSize: "cover",
+            color: "transparent",
+            backgroundClip: "text",
             fontSize: { xs: "4rem", sm: "5rem", md: "6rem" },
           }}
         >
@@ -56,7 +60,10 @@ export const Hero = () => {
           variant="h1"
           component="h1"
           sx={{
-            color: colors.tussok,
+            backgroundImage: `url(${frame})`,
+            backgroundSize: "cover",
+            color: "transparent",
+            backgroundClip: "text",
             fontSize: { xs: "4rem", sm: "5rem", md: "6rem" },
           }}
         >

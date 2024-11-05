@@ -2,9 +2,9 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 
 import { content } from "../constants/content";
-import { colors } from "../constants/colors";
 
 import showcase_pic from "../images/showcase_pic.jpg";
+import frame from "../images/wood.webp";
 
 export const Showcase = () => {
   return (
@@ -26,7 +26,8 @@ export const Showcase = () => {
           height: "auto",
           maxHeight: { xs: 300, sm: 300, md: 450 },
           border: "10px solid",
-          borderColor: colors.tussok,
+          borderImageSource: `url(${frame})`,
+          borderImageSlice: "30%",
           borderRadius: 2,
           boxShadow: 3,
           padding: 1,
