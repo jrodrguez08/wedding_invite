@@ -35,7 +35,7 @@ export const Gifts = () => {
               </IconButton>
               {content.gifts.heading}
             </Typography>
-            <Typography variant="body1" color="textSecondary">
+            <Typography variant="body1">
               {content.gifts.text}
             </Typography>
             <Typography
