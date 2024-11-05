@@ -13,15 +13,12 @@ export const WeddingDate = () => {
   const period = date.getHours() >= 12 ? "de la tarde" : "de la mañana";
 
   const formattedTime = `a las ${hour} ${period}`;
-  const formattedDateTime = format(
-    content.date.weddingDate,
-    "EEEE d 'de' MMMM",
-    {
-      locale: es,
-    }
-  );
-  const capitalizedDateTime =
-    formattedDateTime.charAt(0).toUpperCase() + formattedDateTime.slice(1);
+  const dayName = format(date, "EEEE", { locale: es });
+  const dayNumber = format(date, "d", { locale: es });
+  const monthName = format(date, "MMMM", { locale: es });
+
+const capitalizedDayName = dayName.charAt(0).toUpperCase() + dayName.slice(1);
+const capitalizedMonthName = monthName.charAt(0).toUpperCase() + monthName.slice(1);
 
   return (
     <Box
@@ -36,7 +33,7 @@ export const WeddingDate = () => {
       <Paper sx={{ padding: {xs: "2rem 1rem", sm: "2rem 1rem", md: "4rem"} }}>
         <Box sx={{ marginBottom: "2rem" }}>
           <Typography variant="h4" gutterBottom>
-            {capitalizedDateTime}
+            {`${capitalizedDayName} ${dayNumber} de ${capitalizedMonthName}`}
           </Typography>
           <Typography variant="h5" sx={{ color: colors.tundora }}>
             {formattedTime}
