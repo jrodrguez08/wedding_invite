@@ -40,6 +40,11 @@ export const invitees = [
     spaces: 1,
   },
   {
+    param: "Luis_Fonseca",
+    name: "Luis",
+    spaces: 2,
+  },
+  {
     param: "Carmen_Lopez",
     name: "Carmen",
     spaces: 1,
@@ -127,6 +132,11 @@ export const invitees = [
   {
     param: "Jose_Molina",
     name: "Jose",
+    spaces: 2,
+  },
+  {
+    param: "Katherine_Molina",
+    name: "Katherine",
     spaces: 2,
   },
   {
