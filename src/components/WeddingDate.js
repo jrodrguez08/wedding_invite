@@ -33,7 +33,7 @@ export const WeddingDate = () => {
         justifyContent: "center",
       }}
     >
-      <Paper sx={{ padding: "4rem" }}>
+      <Paper sx={{ padding: {xs: "2rem 1rem", sm: "2rem 1rem", md: "4rem"} }}>
         <Box sx={{ marginBottom: "2rem" }}>
           <Typography variant="h4" gutterBottom>
             {capitalizedDateTime}
