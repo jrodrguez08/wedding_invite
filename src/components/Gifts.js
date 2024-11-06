@@ -1,11 +1,22 @@
 import React from "react";
 import { Box, Typography, Card, CardContent, IconButton } from "@mui/material";
 import CardGiftcardOutlinedIcon from "@mui/icons-material/CardGiftcardOutlined";
-
+import { useLocation } from "@reach/router";
+import queryString from "query-string";
 import { content } from "../constants/content";
 import { colors } from "../constants/colors";
 
+import { invitees } from "../constants/invitees";
+
 export const Gifts = () => {
+
+  const location = useLocation();
+  const { invitee } = queryString.parse(location.search);
+
+  const inviteeData = invitees?.find(
+    (i) => i?.param?.toLowerCase() === invitee?.toLowerCase()
+  );
+
   return (
     <Box
       id="regalos"
@@ -36,7 +47,7 @@ export const Gifts = () => {
               {content.gifts.heading}
             </Typography>
             <Typography variant="body1">
-              {content.gifts.text}
+              {content.gifts.text.replace("{{name}}", inviteeData?.name || "Invitado")}
             </Typography>
             <Typography
               variant="h6"

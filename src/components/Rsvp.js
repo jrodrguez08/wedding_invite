@@ -21,6 +21,7 @@ export const Rsvp = () => {
   const inviteeData = invitees?.find(
     (i) => i?.param?.toLowerCase() === invitee?.toLowerCase()
   );
+
   const isPlusOne = inviteeData?.spaces === 2;
 
   const spacesText = isPlusOne
@@ -30,6 +31,7 @@ export const Rsvp = () => {
     ? content.rsvp.availabilityTwo
     : content.rsvp.availabilityOne;
   let whatsappUrl = content.rsvp.whatsappUrl
+    .replace("{{name}}", inviteeData?.name || "Invitado")
     .replace("{{amount}}", inviteeData?.spaces)
     .replace("{{spaces}}", spacesText)
     .replace("{{availability}}", availabilityText);
@@ -40,9 +42,6 @@ export const Rsvp = () => {
   const spacesIconText = isPlusOne
     ? `${content.rsvp.spacesTwo} ${content.rsvp.availabilityTwo}`
     : `${content.rsvp.spacesOne} ${content.rsvp.availabilityOne}`;
-
-  const inviteesAmount = invitees?.reduce((acc, i) => acc + i?.spaces, 0);
-  console.log("inviteesAmount", inviteesAmount);
 
   return (
     <Box

@@ -76,7 +76,7 @@ export const content = {
   },
   gifts: {
 	heading: "Regalos",
-	text: "Queridos invitados, su presencia en nuestra boda es el mejor regalo que podríamos pedir. Si desean realizar un regalo adicional, agradeceríamos mucho que sea en efectivo.",
+	text: "{{name}}, tu presencia en nuestra boda es el mejor regalo que podríamos pedir, sin embargo, si deseas realizar un regalo adicional, agradeceríamos mucho que sea en efectivo.",
 	account: "Número de cuenta: CR96010200009315076022",
 	sinpe: "Sinpe Móvil: 88208054",
   },
@@ -89,7 +89,7 @@ export const content = {
 	heading: "Confirmar Asistencia",
 	text: "Hola {{invitee}}! Por favor, confirma tu asistencia a nuestra boda.",
 	whatsappText: "Confirmar asistencia",
-	whatsappUrl: "https://wa.me/50664328083?text=¡Hola!%20Gracias%20por%20confirmar%20tu%20asistencia%20a%20nuestra%20boda.%20Recuerda%20que%20tienes%20{{amount}}%20{{spaces}}%20{{availability}}.",
+	whatsappUrl: "https://wa.me/50664328083?text=¡Hola%20{{name}}!%20Gracias%20por%20confirmar%20tu%20asistencia%20a%20nuestra%20boda.%20Recuerda%20que%20tienes%20{{amount}}%20{{spaces}}%20{{availability}}.",
 	plusOne: "%20¿Cuántos%20vas%20a%20utilizar%3F",
 	spacesOne: "lugar",
 	spacesTwo: "lugares",
