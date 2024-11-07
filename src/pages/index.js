@@ -11,6 +11,7 @@ import { Countdown } from "../components/Countdown";
 import { Gifts } from "../components/Gifts";
 import { Dresscode } from "../components/Dresscode";
 import { Rsvp } from "../components/Rsvp";
+import { GoToTopButton } from "../components/GoToTop";
 
 const IndexPage = () => {
   return (
@@ -29,6 +30,7 @@ const IndexPage = () => {
       <Gifts />
       <Dresscode />
       <Rsvp />
+      <GoToTopButton />
     </Container>
   );
 };
