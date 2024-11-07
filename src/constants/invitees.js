@@ -171,7 +171,7 @@ export const invitees = [
   },
   { param: "Jeison_Montero", name: "Jeison", spaces: 2 },
   {
-    param: "Kevin_Cruz",
+    param: "Kevin_Mora",
     name: "Kevin",
     spaces: 2,
   },
