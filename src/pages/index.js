@@ -6,7 +6,6 @@ import { Hero } from "../components/Hero";
 import { Collage } from "../components/Collage";
 import { WeddingDate } from "../components/WeddingDate";
 import { Showcase } from "../components/Showcase";
-import { CustomizedTimeline } from "../components/CustomTimeline";
 import { Countdown } from "../components/Countdown";
 import { Gifts } from "../components/Gifts";
 import { Dresscode } from "../components/Dresscode";
@@ -25,7 +24,6 @@ const IndexPage = () => {
       <Collage />
       <WeddingDate />
       <Showcase />
-      <CustomizedTimeline />
       <Countdown />
       <Gifts />
       <Dresscode />

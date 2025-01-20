@@ -40,6 +40,6 @@ module.exports = {
         display: `standalone`,
         icon: `src/images/favicon.webp`, // Path to your favicon file
       },
-    },
+    }
   ],
 };

@@ -89,13 +89,17 @@ export const content = {
 	heading: "Confirmar Asistencia",
 	text: "Hola {{invitee}}! Por favor, confirma tu asistencia a nuestra boda.",
 	whatsappText: "Confirmar asistencia",
-	whatsappUrl: "https://wa.me/50664328083?text=¡Hola%20{{name}}!%20Gracias%20por%20confirmar%20tu%20asistencia%20a%20nuestra%20boda.%20Recuerda%20que%20tienes%20{{amount}}%20{{spaces}}%20{{availability}}.",
-	plusOne: "%20¿Cuántos%20vas%20a%20utilizar%3F",
+	whatsappUrl: "https://wa.me/50661754828?text=¡Hola%20{{name}}!%20Gracias%20por%20confirmar%20tu%20asistencia%20a%20nuestra%20boda.%20Recuerda%20que%20tienes%20{{amount}}%20{{spaces}}%20{{availability}}",
+	plusOne: "%20para%20ti%20{{prep}}%20{{plusOne}}%20¿Cuántos%20vas%20a%20utilizar%3F",
 	spacesOne: "lugar",
 	spacesTwo: "lugares",
 	availabilityOne: "disponible",
 	availabilityTwo: "disponibles",
 	age: "Evento solo para mayores de edad",
-	dance: "Prohibido no bailar"
+	dance: "Prohibido no bailar",
+	deadline: {
+		date: "2025-02-01T12:00:00",
+		text: "Fecha límite para confirmar asistencia:"
+	}
   }
 };
